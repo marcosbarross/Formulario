@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+</head>
+<body>
+    <fieldset id="max">
+        <legend>Formulário de inscrição</legend>
+        <div id="field">
+            <p>Nome: <input type="text" placeholder="Insira seu sobrenome" class="input"></p>
+
+            <P>Sobrenome: <input type="text" class="input" placeholder="Insira o seu nome"></P>
+
+            <p>Idade: <input type="number" id="idade" class="input" max="120" min="18"></p>
+
+            <p>
+            Sexo:
+            <label for="masc">Masculino</label>
+            <input type="radio" name="sex" id="masc">
+            <label for="fem">Feminino</label>
+            <input type="radio" name="sex" id="fem" class="input" class="input">
+            </p>
+            
+            <p>Foto: <input type="file" name="" id="file" class="input" accept=".jpeg, .PNG"></p>
+            
+            <p>País:
+            <Select>
+                <option value="argentina">Argentina</option>
+                <option value="brasil">Brasil</option>
+                <option value="Chile">Chile</option>
+                <option value="Dinamaarca">Dinamarca</option>
+            </Select>
+            </p>
+            <p>
+            As linguagens que você prefere:
+            <Select size="3" multiple>
+                <option value="java">Java</option>
+                <option value="c">C</option>
+                <option value="c++">C++</option>
+                <option value="php">PHP/option>
+            </Select>
+            (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)
+            </p>
+
+            <p>Áreas de Atuação: 
+                <input type="checkbox" name="area"> Computação 
+                <input type="checkbox" name="area"> Gestão
+                <input type="checkbox" name="area"> Pedagogia
+            </p>
+
+
+            <button type="submit">Enviar</button>
+            <a href="index.html"><button type="reset">Limpar</button></a>
+        </div>
+
+    </fieldset>
+</body>
+</html>
